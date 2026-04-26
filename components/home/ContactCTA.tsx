@@ -6,7 +6,7 @@ export function ContactCTA() {
     <div className="bg-green-dark px-14 py-[70px] text-center">
       <h2 className="mb-3 font-heading text-[30px] font-bold text-white">Ready to work together?</h2>
       <p className="mx-auto mb-7 max-w-md font-body text-[15px] text-white/70">
-        Whether you need writing, sustainability training, or investment support — let's talk.
+        Whether you need writing, sustainability training, or investment support &mdash; let&apos;s talk.
       </p>
       <div className="flex flex-wrap items-center justify-center gap-3">
         <Link

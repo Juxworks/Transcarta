@@ -18,7 +18,7 @@ export function Mission() {
         <div>
           <SectionLabel>Our Mission</SectionLabel>
           <blockquote className="mb-5 border-l-4 border-blue-brand pl-6 font-heading text-xl font-semibold leading-relaxed text-green-dark">
-            "{siteConfig.vision}"
+            &ldquo;{siteConfig.vision}&rdquo;
           </blockquote>
           <p className="mb-5 font-body text-[15px] leading-7 text-[#374151]">
             Transcarta focuses on making the world a better and more sustainable place — through

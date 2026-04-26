@@ -50,7 +50,7 @@ export default function AboutPage() {
             <div className="rounded-md border border-border bg-white p-8">
               <h3 className="mb-3 font-heading text-lg font-semibold text-green-dark">Our Vision</h3>
               <p className="font-body text-[15px] italic leading-7 text-[#374151]">
-                "{siteConfig.vision}"
+                &ldquo;{siteConfig.vision}&rdquo;
               </p>
             </div>
             <div className="rounded-md border border-blue-brand/20 bg-blue-tint p-8">
