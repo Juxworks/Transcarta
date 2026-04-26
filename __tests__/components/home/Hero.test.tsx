@@ -11,7 +11,8 @@ vi.mock('next/link', () => ({
 describe('Hero', () => {
   it('renders the tagline', () => {
     render(<Hero />)
-    expect(screen.getByText(/Writing, coaching, training/i)).toBeInTheDocument()
+    const h1 = screen.getByRole('heading', { level: 1 })
+    expect(h1.textContent).toMatch(/Writing, coaching,\s+training/i)
   })
 
   it('renders the mission statement', () => {

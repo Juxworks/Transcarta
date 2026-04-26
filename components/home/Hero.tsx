@@ -32,7 +32,9 @@ export function Hero() {
           className="mb-5 max-w-[640px] font-heading text-[clamp(32px,4.2vw,54px)] font-bold leading-[1.18] text-white"
           style={{ textShadow: '0 2px 16px rgba(0,0,0,0.18)' }}
         >
-          Writing, coaching, training & board service{' '}
+          Writing, coaching,{' '}
+          <span className="border-b-2 border-blue-300 text-blue-200">training</span>
+          {' '}& board service{' '}
           <em className="not-italic text-green-light">for climate.</em>
         </h1>
 
