@@ -11,8 +11,8 @@ export function Footer() {
         <Image
           src="/logo.png"
           alt="Transcarta"
-          width={130}
-          height={34}
+          width={150}
+          height={44}
           className="opacity-65 brightness-0 invert"
         />
         <nav className="flex flex-wrap gap-6">

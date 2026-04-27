@@ -11,7 +11,7 @@ export function Nav() {
     <header className="sticky top-0 z-40 h-[72px] w-full border-b-2 border-blue-brand bg-white shadow-[0_1px_12px_rgba(0,0,0,0.06)] backdrop-blur-md">
       <div className="mx-auto flex h-full max-w-content items-center justify-between px-14">
         <Link href="/" aria-label="Transcarta home">
-          <Image src="/logo.png" alt="Transcarta" width={140} height={36} priority />
+          <Image src="/logo.png" alt="Transcarta" width={160} height={47} priority />
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map(link => {
