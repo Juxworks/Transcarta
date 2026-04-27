@@ -41,10 +41,10 @@ export default function AboutPage() {
           </div>
           <div className="relative h-[340px] overflow-hidden rounded-lg shadow-[0_4px_24px_rgba(0,0,0,0.10)]">
             <Image
-              src="/profile-rh.png"
-              alt="Founder and Principal, Transcarta"
+              src="/tc-hero.jpg"
+              alt="Transcarta team at work"
               fill
-              className="object-cover object-top"
+              className="object-cover object-center"
             />
           </div>
         </div>
@@ -95,7 +95,7 @@ export default function AboutPage() {
                 src="/profile-rh.png"
                 alt="Founder and Principal, Transcarta"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-center"
               />
             </div>
             <div>
