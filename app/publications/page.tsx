@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react'
+import Image from 'next/image'
 import { PageHero } from '@/components/shared/PageHero'
 import { OutletFilter } from '@/components/publications/OutletFilter'
 import { PublicationCard } from '@/components/shared/PublicationCard'
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
 import { ContactCTA } from '@/components/home/ContactCTA'
 import { publications, publicationOutlets } from '@/lib/data'
 
@@ -26,16 +26,24 @@ export default function PublicationsPage() {
             Featured Article
           </p>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <ImagePlaceholder label="Featured Article Image" dimensions="1160 × 520px" className="h-[280px]" />
+            <div className="relative h-[280px] overflow-hidden rounded-lg">
+              <Image
+                src="/publications_Meaning.webp"
+                alt="Make Your Life more Meaningful"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
             <div className="flex flex-col justify-center">
               <span className="mb-2 inline-flex items-center gap-1.5 font-body text-[10px] font-bold uppercase tracking-[1.5px] text-blue-brand">
                 <span className="h-1.5 w-1.5 rounded-full bg-blue-brand" /> Impact Entrepreneur
               </span>
               <h2 className="mb-3 font-heading text-2xl font-bold text-ink">
-                Article title to be added
+                Make Your Life more Meaningful
               </h2>
               <p className="mb-4 font-body text-sm leading-relaxed text-muted">
-                2024 · Climate & Finance
+                A structured framework for reclaiming a sense of purpose and productivity in an often distracted and uncertain world. It emphasizes moving beyond mundane tasks to align daily actions with long-term vision.
               </p>
               <a href="#" className="font-body text-sm font-semibold text-blue-brand hover:underline">
                 Read article →

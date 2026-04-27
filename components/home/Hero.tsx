@@ -33,7 +33,7 @@ export function Hero() {
           style={{ textShadow: '0 2px 16px rgba(0,0,0,0.18)' }}
         >
           Writing, coaching,{' '}
-          <span className="border-b-2 border-blue-300 text-blue-200">training</span>
+          training
           {' '}& board service{' '}
           <em className="not-italic text-green-light">for climate.</em>
         </h1>

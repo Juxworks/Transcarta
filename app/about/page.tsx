@@ -41,8 +41,8 @@ export default function AboutPage() {
           </div>
           <div className="relative h-[340px] overflow-hidden rounded-lg shadow-[0_4px_24px_rgba(0,0,0,0.10)]">
             <Image
-              src="/tc-hero.jpg"
-              alt="Transcarta team at work"
+              src="/about-rainforest.jpg"
+              alt="Rainforest — Transcarta's commitment to sustainability"
               fill
               className="object-cover object-center"
             />
@@ -99,9 +99,9 @@ export default function AboutPage() {
               />
             </div>
             <div>
-              <p className="font-heading text-[15px] font-semibold text-green-dark">Founder &amp; Principal</p>
-              <p className="mt-1 max-w-xs font-body text-sm leading-relaxed text-muted">
-                20+ years in financial services, sustainability and communications across Asia Pacific and North America.
+              <p className="font-heading text-[15px] font-semibold text-green-dark">Richard Hartung — Founder &amp; Principal</p>
+              <p className="mt-1 max-w-sm font-body text-sm leading-relaxed text-muted">
+                An experienced professional with over 20 years of expertise in the payments and consumer financial services industry, specifically in the Asia Pacific region. He has held key roles at Citibank, Mastercard, and OCBC Bank, and established Transcarta to assist financial services companies with strategy, operations improvement, and market research.
               </p>
             </div>
           </div>

@@ -1,5 +1,5 @@
+import Image from 'next/image'
 import { SectionLabel } from '@/components/ui/SectionLabel'
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
 import { affiliations } from '@/lib/data'
 
 export function Affiliations() {
@@ -12,14 +12,25 @@ export function Affiliations() {
         </h2>
         <div className="flex flex-wrap gap-5">
           {affiliations.map(aff => (
-            <div
+            <a
               key={aff.id}
-              className="flex min-w-[180px] flex-1 flex-col items-center gap-3 rounded-md border border-emerald-100 border-l-[3px] border-l-blue-brand bg-white p-6"
+              href={aff.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex min-w-[180px] flex-1 flex-col items-center gap-3 rounded-md border border-emerald-100 border-l-[3px] border-l-blue-brand bg-white p-6 transition hover:border-blue-200 hover:shadow-md"
             >
-              <ImagePlaceholder label="Logo" dimensions="200 × 80px" className="h-14 w-full rounded-[4px]" />
+              <div className="relative h-16 w-full">
+                <Image
+                  src={aff.logo}
+                  alt={aff.name}
+                  fill
+                  className={`object-contain ${aff.logoScale ?? ''}`}
+                  sizes="160px"
+                />
+              </div>
               <p className="text-center font-heading text-[13px] font-semibold text-green-dark">{aff.name}</p>
               <p className="text-center font-body text-[11px] text-muted">{aff.role}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>

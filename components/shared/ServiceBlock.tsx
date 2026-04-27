@@ -1,5 +1,5 @@
+import Image from 'next/image'
 import { PenLine, TrendingUp, Users, Building2 } from 'lucide-react'
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
 import type { Service } from '@/lib/data'
 
 const iconMap: Record<Service['icon'], React.ReactNode> = {
@@ -33,7 +33,9 @@ export function ServiceBlock({ service, reverse = false }: Props) {
   )
 
   const imageCol = (
-    <ImagePlaceholder label={service.name} dimensions={service.imageDimensions} className="h-[320px]" />
+    <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg">
+      <Image src={service.image} alt={service.name} fill className="object-cover object-center" sizes="(max-width: 1024px) 100vw, 50vw" />
+    </div>
   )
 
   return (
