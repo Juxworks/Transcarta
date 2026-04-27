@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { PageHero } from '@/components/shared/PageHero'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
@@ -38,7 +39,14 @@ export default function AboutPage() {
               commitment to climate action.
             </p>
           </div>
-          <ImagePlaceholder label="Office / Team Photo" dimensions="680 × 480px" className="h-[340px]" />
+          <div className="relative h-[340px] overflow-hidden rounded-lg shadow-[0_4px_24px_rgba(0,0,0,0.10)]">
+            <Image
+              src="/profile-rh.png"
+              alt="Founder and Principal, Transcarta"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
         </div>
       </section>
 
@@ -80,7 +88,24 @@ export default function AboutPage() {
           Our team brings together experience spanning financial services, sustainability consulting,
           writing and board governance — united by a commitment to a more sustainable world.
         </p>
-        <ImagePlaceholder label="Team Photo" dimensions="560 × 400px" className="h-[320px] lg:w-2/3" />
+        <div className="flex flex-wrap gap-6">
+          <div className="flex items-center gap-5 rounded-lg border border-border bg-white p-5 shadow-sm">
+            <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-full">
+              <Image
+                src="/profile-rh.png"
+                alt="Founder and Principal, Transcarta"
+                fill
+                className="object-cover object-top"
+              />
+            </div>
+            <div>
+              <p className="font-heading text-[15px] font-semibold text-green-dark">Founder &amp; Principal</p>
+              <p className="mt-1 max-w-xs font-body text-sm leading-relaxed text-muted">
+                20+ years in financial services, sustainability and communications across Asia Pacific and North America.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <Affiliations />
