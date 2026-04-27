@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 import { Chip } from '@/components/ui/Chip'
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
 import { siteConfig } from '@/lib/data'
 
 const chips: { label: string; variant: 'green' | 'blue' }[] = [
@@ -28,7 +28,15 @@ export function Mission() {
             {chips.map(c => <Chip key={c.label} variant={c.variant}>{c.label}</Chip>)}
           </div>
         </div>
-        <ImagePlaceholder label="Team / Mission Photo" dimensions="680 × 480px" className="h-[340px]" />
+        <div className="flex items-center justify-center rounded-lg bg-green-mint p-8 shadow-[0_4px_24px_rgba(0,0,0,0.07)]">
+          <Image
+            src="/profile-rh.png"
+            alt="Richard Hartung, Founder and Principal"
+            width={320}
+            height={320}
+            className="h-auto w-full max-w-[320px] drop-shadow-md"
+          />
+        </div>
       </div>
     </section>
   )
