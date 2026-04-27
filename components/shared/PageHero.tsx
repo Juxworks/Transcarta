@@ -6,7 +6,7 @@ type Props = {
 
 export function PageHero({ label, heading, sub }: Props) {
   return (
-    <div className="bg-green-mint px-14 py-16">
+    <div className="bg-green-mint px-14 pb-16 pt-[88px]">
       <div className="mx-auto max-w-content">
         {label && (
           <p className="mb-3 font-body text-[11px] font-semibold uppercase tracking-[3px] text-blue-brand">

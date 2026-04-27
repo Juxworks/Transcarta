@@ -7,9 +7,9 @@ export function Hero() {
       {/* Background image */}
       <div
         className="absolute inset-0 scale-[1.03] bg-cover bg-[center_30%]"
-        style={{ backgroundImage: "url('/hero-forest.webp')" }}
+        style={{ backgroundImage: "url('/tc-hero.jpg')" }}
         role="img"
-        aria-label="Misty tropical rainforest"
+        aria-label="Transcarta — climate and sustainability consultants"
       />
 
       {/* Green gradient overlay — lighter at right so forest breathes through */}
