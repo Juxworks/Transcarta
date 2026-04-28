@@ -99,7 +99,7 @@ export default function AboutPage() {
               />
             </div>
             <div>
-              <p className="font-heading text-[15px] font-semibold text-green-dark">Richard Hartung — Founder &amp; Principal</p>
+              <p className="font-heading text-[15px] font-semibold text-green-dark">Richard Hartung — Founder &amp; Managing Director</p>
               <p className="mt-1 max-w-sm font-body text-sm leading-relaxed text-muted">
                 An experienced professional with over 20 years of expertise in the payments and consumer financial services industry, specifically in the Asia Pacific region. He has held key roles at Citibank, Mastercard, and OCBC Bank, and established Transcarta to assist financial services companies with strategy, operations improvement, and market research.
               </p>

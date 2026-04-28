@@ -59,23 +59,7 @@ export default function PublicationsPage() {
         </div>
       </div>
 
-      {/* Writing CTA */}
-      <div className="bg-green-mint py-16 text-center">
-        <h2 className="mb-3 font-heading text-2xl font-bold text-green-dark">
-          Need writing for your organisation?
-        </h2>
-        <p className="mx-auto mb-6 max-w-md font-body text-sm text-muted">
-          From articles and newsletters to research and copywriting — get in touch.
-        </p>
-        <a
-          href="/contact"
-          className="inline-block rounded-[6px] bg-green-primary px-8 py-3 font-heading text-sm font-semibold text-white hover:bg-green-dark"
-        >
-          Get In Touch
-        </a>
-      </div>
-
-      <ContactCTA />
+<ContactCTA />
     </>
   )
 }
